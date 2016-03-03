@@ -30,6 +30,9 @@
 
 \RequirePackage{xcolor}
 
+% Pacote para o logo da UFOP ao lado do cabeçalho.
+\RequirePackage{wrapfig}
+
 % Define comando para o nome do Instituto
 \providecommand{\imprimirinstituto}{}
 \newcommand{\instituto}[1]{\renewcommand{\imprimirinstituto}{#1}}
@@ -161,12 +164,8 @@
       }
       \put(-2,8){\line(0,-1){65}} % linha vertical
     \end{picture}
-
-    \vspace*{3mm}
-
-    \hspace*{5mm}
-    \begin{minipage}[h]{0.7\textwidth}
-
+    
+    \begin{minipage}[h]{0.8\textwidth}
       \centering
       \begin{OnehalfSpace}
       {\ABNTEXchapterfont\Large\bfseries \imprimirinstituicao{}}
@@ -175,6 +174,12 @@
 
       {\ABNTEXchapterfont\Large\bfseries \imprimircolegiado{}}
       \end{OnehalfSpace}
+    \end{minipage}
+    \begin{minipage}[h]{0.1\textwidth}
+        \includegraphics[width=\textwidth]{UFOP.png}
+    \end{minipage}
+
+    \begin{minipage}[h]{0.8\textwidth}
 
       \vspace*{15mm}
 
